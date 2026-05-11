@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Handwriting Recognition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>HANDWRITING RECOGNITION</h1>
+        <canvas id="canvas" width="280" height="280"></canvas>
+        <div class="button-group">
+            <button id="clear-btn">CLEAR</button>
+            <button id="predict-btn">PREDICT</button>
+        </div>
+        <div id="result">PREDICTION: <span id="prediction">-</span></div>
+        <div class="chart-container">
+            <canvas id="probabilityChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
